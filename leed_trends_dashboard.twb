@@ -1,0 +1,2668 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Top 5 owner type' datatype='integer' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='5'>
+        <calculation class='tableau' formula='5' />
+        <range granularity='5' max='20' min='5' />
+      </column>
+    </datasource>
+    <datasource caption='Sheet1 (clean_emmision)' inline='true' name='federated.0mujgvv0xmtyrm14prm2f1p5qgbu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean_emmision' name='excel-direct.0e2gmiq1khrpu61dtwifx0kj74do'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='D:/georgia tech study materials/courses/semester2/cs6242/project/clean_emmision.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0e2gmiq1khrpu61dtwifx0kj74do' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D1081:no:A1:D1081:1' header='yes' lost='0' outcome='1' processed='3200'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='abbr_state' ordinal='1' />
+            <column datatype='integer' name='variable' ordinal='2' />
+            <column datatype='real' name='value' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0e2gmiq1khrpu61dtwifx0kj74do' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:D1081:no:A1:D1081:1' header='yes' lost='0' outcome='1' processed='3200'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='abbr_state' ordinal='1' />
+            <column datatype='integer' name='variable' ordinal='2' />
+            <column datatype='real' name='value' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>5</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D1081:no:A1:D1081:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>3200</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_DC0917D88F8F4B1684CD255197953AE3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>abbr_state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[abbr_state]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>abbr_state</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_DC0917D88F8F4B1684CD255197953AE3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variable</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[variable]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>variable</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_DC0917D88F8F4B1684CD255197953AE3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[value]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>value</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_DC0917D88F8F4B1684CD255197953AE3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_DC0917D88F8F4B1684CD255197953AE3]' role='measure' type='quantitative' />
+      <column caption='Abbr State' datatype='string' name='[abbr_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+      <column caption='Variable' datatype='integer' name='[variable]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_DC0917D88F8F4B1684CD255197953AE3'>
+            <properties context=''>
+              <relation connection='excel-direct.0e2gmiq1khrpu61dtwifx0kj74do' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:D1081:no:A1:D1081:1' header='yes' lost='0' outcome='1' processed='3200'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='abbr_state' ordinal='1' />
+                  <column datatype='integer' name='variable' ordinal='2' />
+                  <column datatype='real' name='value' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (PublicLEEDProjectsDirectory)' inline='true' name='federated.0x5b4lk1nn2t3g14mz9i00gy8v11' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='PublicLEEDProjectsDirectory' name='excel-direct.04bswat09amrl51cy25vr1pumitz'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/manim/Downloads/PublicLEEDProjectsDirectory.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='clean_emmision' name='excel-direct.0p476lj11n77681ezquml1vigjfd'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/gatech/CS6242/Project/PublicLEEDProjectsDirectory.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0p476lj11n77681ezquml1vigjfd' name='Sheet11' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:T10001:no:A1:T2147483647:1' header='yes' lost='0' outcome='1' processed='39195'>
+            <column datatype='integer' name='ID' ordinal='0' />
+            <column datatype='string' name='Isconfidential' ordinal='1' />
+            <column datatype='string' name='ProjectName' ordinal='2' />
+            <column datatype='string' name='Street' ordinal='3' />
+            <column datatype='string' name='City' ordinal='4' />
+            <column datatype='string' name='State' ordinal='5' />
+            <column datatype='string' name='Zipcode' ordinal='6' />
+            <column datatype='string' name='Country' ordinal='7' />
+            <column datatype='string' name='LEEDSystemVersionDisplayName' ordinal='8' />
+            <column datatype='integer' name='PointsAchieved' ordinal='9' />
+            <column datatype='string' name='CertLevel' ordinal='10' />
+            <column datatype='string' name='CertDate' ordinal='11' />
+            <column datatype='string' name='IsCertified' ordinal='12' />
+            <column datatype='string' name='OwnerTypes' ordinal='13' />
+            <column datatype='real' name='GrossFloorArea' ordinal='14' />
+            <column datatype='string' name='UnitOfMeasurement' ordinal='15' />
+            <column datatype='integer' name='TotalPropArea' ordinal='16' />
+            <column datatype='string' name='ProjectTypes' ordinal='17' />
+            <column datatype='string' name='OwnerOrganization' ordinal='18' />
+            <column datatype='string' name='RegistrationDate' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.04bswat09amrl51cy25vr1pumitz' name='Sheet1' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:T10001:no:A1:T2147483647:1' header='yes' lost='0' outcome='1' processed='39195'>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='Isconfidential' ordinal='1' />
+              <column datatype='string' name='ProjectName' ordinal='2' />
+              <column datatype='string' name='Street' ordinal='3' />
+              <column datatype='string' name='City' ordinal='4' />
+              <column datatype='string' name='State' ordinal='5' />
+              <column datatype='string' name='Zipcode' ordinal='6' />
+              <column datatype='string' name='Country' ordinal='7' />
+              <column datatype='string' name='LEEDSystemVersionDisplayName' ordinal='8' />
+              <column datatype='integer' name='PointsAchieved' ordinal='9' />
+              <column datatype='string' name='CertLevel' ordinal='10' />
+              <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ss' name='CertDate' ordinal='11' />
+              <column datatype='string' name='IsCertified' ordinal='12' />
+              <column datatype='string' name='OwnerTypes' ordinal='13' />
+              <column datatype='real' name='GrossFloorArea' ordinal='14' />
+              <column datatype='string' name='UnitOfMeasurement' ordinal='15' />
+              <column datatype='integer' name='TotalPropArea' ordinal='16' />
+              <column datatype='string' name='ProjectTypes' ordinal='17' />
+              <column datatype='string' name='OwnerOrganization' ordinal='18' />
+              <column datatype='string' name='RegistrationDate' ordinal='19' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0p476lj11n77681ezquml1vigjfd' name='Sheet11' table='[Sheet1$]' type='table'>
+            <columns gridOrigin='A1:T10001:no:A1:T2147483647:1' header='yes' lost='0' outcome='1' processed='39195'>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='Isconfidential' ordinal='1' />
+              <column datatype='string' name='ProjectName' ordinal='2' />
+              <column datatype='string' name='Street' ordinal='3' />
+              <column datatype='string' name='City' ordinal='4' />
+              <column datatype='string' name='State' ordinal='5' />
+              <column datatype='string' name='Zipcode' ordinal='6' />
+              <column datatype='string' name='Country' ordinal='7' />
+              <column datatype='string' name='LEEDSystemVersionDisplayName' ordinal='8' />
+              <column datatype='integer' name='PointsAchieved' ordinal='9' />
+              <column datatype='string' name='CertLevel' ordinal='10' />
+              <column datatype='string' name='CertDate' ordinal='11' />
+              <column datatype='string' name='IsCertified' ordinal='12' />
+              <column datatype='string' name='OwnerTypes' ordinal='13' />
+              <column datatype='real' name='GrossFloorArea' ordinal='14' />
+              <column datatype='string' name='UnitOfMeasurement' ordinal='15' />
+              <column datatype='integer' name='TotalPropArea' ordinal='16' />
+              <column datatype='string' name='ProjectTypes' ordinal='17' />
+              <column datatype='string' name='OwnerOrganization' ordinal='18' />
+              <column datatype='string' name='RegistrationDate' ordinal='19' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[CertDate (Sheet11)]' value='[Sheet11].[CertDate]' />
+          <map key='[CertDate]' value='[Sheet1].[CertDate]' />
+          <map key='[CertLevel (Sheet11)]' value='[Sheet11].[CertLevel]' />
+          <map key='[CertLevel]' value='[Sheet1].[CertLevel]' />
+          <map key='[City (Sheet11)]' value='[Sheet11].[City]' />
+          <map key='[City]' value='[Sheet1].[City]' />
+          <map key='[Country (Sheet11)]' value='[Sheet11].[Country]' />
+          <map key='[Country]' value='[Sheet1].[Country]' />
+          <map key='[GrossFloorArea (Sheet11)]' value='[Sheet11].[GrossFloorArea]' />
+          <map key='[GrossFloorArea]' value='[Sheet1].[GrossFloorArea]' />
+          <map key='[ID (Sheet11)]' value='[Sheet11].[ID]' />
+          <map key='[ID]' value='[Sheet1].[ID]' />
+          <map key='[IsCertified (Sheet11)]' value='[Sheet11].[IsCertified]' />
+          <map key='[IsCertified]' value='[Sheet1].[IsCertified]' />
+          <map key='[Isconfidential (Sheet11)]' value='[Sheet11].[Isconfidential]' />
+          <map key='[Isconfidential]' value='[Sheet1].[Isconfidential]' />
+          <map key='[LEEDSystemVersionDisplayName (Sheet11)]' value='[Sheet11].[LEEDSystemVersionDisplayName]' />
+          <map key='[LEEDSystemVersionDisplayName]' value='[Sheet1].[LEEDSystemVersionDisplayName]' />
+          <map key='[OwnerOrganization (Sheet11)]' value='[Sheet11].[OwnerOrganization]' />
+          <map key='[OwnerOrganization]' value='[Sheet1].[OwnerOrganization]' />
+          <map key='[OwnerTypes (Sheet11)]' value='[Sheet11].[OwnerTypes]' />
+          <map key='[OwnerTypes]' value='[Sheet1].[OwnerTypes]' />
+          <map key='[PointsAchieved (Sheet11)]' value='[Sheet11].[PointsAchieved]' />
+          <map key='[PointsAchieved]' value='[Sheet1].[PointsAchieved]' />
+          <map key='[ProjectName (Sheet11)]' value='[Sheet11].[ProjectName]' />
+          <map key='[ProjectName]' value='[Sheet1].[ProjectName]' />
+          <map key='[ProjectTypes (Sheet11)]' value='[Sheet11].[ProjectTypes]' />
+          <map key='[ProjectTypes]' value='[Sheet1].[ProjectTypes]' />
+          <map key='[RegistrationDate (Sheet11)]' value='[Sheet11].[RegistrationDate]' />
+          <map key='[RegistrationDate]' value='[Sheet1].[RegistrationDate]' />
+          <map key='[State (Sheet11)]' value='[Sheet11].[State]' />
+          <map key='[State]' value='[Sheet1].[State]' />
+          <map key='[Street (Sheet11)]' value='[Sheet11].[Street]' />
+          <map key='[Street]' value='[Sheet1].[Street]' />
+          <map key='[TotalPropArea (Sheet11)]' value='[Sheet11].[TotalPropArea]' />
+          <map key='[TotalPropArea]' value='[Sheet1].[TotalPropArea]' />
+          <map key='[UnitOfMeasurement (Sheet11)]' value='[Sheet11].[UnitOfMeasurement]' />
+          <map key='[UnitOfMeasurement]' value='[Sheet1].[UnitOfMeasurement]' />
+          <map key='[Zipcode (Sheet11)]' value='[Sheet11].[Zipcode]' />
+          <map key='[Zipcode]' value='[Sheet1].[Zipcode]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>3</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T10001:no:A1:T2147483647:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>39195</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Isconfidential</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Isconfidential]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Isconfidential</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProjectName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ProjectName]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ProjectName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Street</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Street]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Street</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zipcode]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Zipcode</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LEEDSystemVersionDisplayName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LEEDSystemVersionDisplayName]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>LEEDSystemVersionDisplayName</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PointsAchieved</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PointsAchieved]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>PointsAchieved</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CertLevel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CertLevel]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CertLevel</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CertDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[CertDate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>CertDate</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsCertified</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[IsCertified]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>IsCertified</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OwnerTypes</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OwnerTypes]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>OwnerTypes</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GrossFloorArea</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GrossFloorArea]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>GrossFloorArea</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UnitOfMeasurement</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[UnitOfMeasurement]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>UnitOfMeasurement</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPropArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPropArea]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>TotalPropArea</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProjectTypes</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ProjectTypes]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>ProjectTypes</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OwnerOrganization</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OwnerOrganization]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>OwnerOrganization</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RegistrationDate</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[RegistrationDate]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>RegistrationDate</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Isconfidential</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Isconfidential (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Isconfidential</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProjectName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ProjectName (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>ProjectName</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Street</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Street (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Street</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Zipcode (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Zipcode</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LEEDSystemVersionDisplayName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[LEEDSystemVersionDisplayName (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>LEEDSystemVersionDisplayName</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PointsAchieved</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PointsAchieved (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>PointsAchieved</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CertLevel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CertLevel (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>CertLevel</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CertDate</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CertDate (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>CertDate</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsCertified</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[IsCertified (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>IsCertified</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OwnerTypes</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OwnerTypes (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>OwnerTypes</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GrossFloorArea</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GrossFloorArea (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>GrossFloorArea</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UnitOfMeasurement</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[UnitOfMeasurement (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>UnitOfMeasurement</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPropArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPropArea (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>TotalPropArea</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProjectTypes</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ProjectTypes (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>ProjectTypes</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OwnerOrganization</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OwnerOrganization (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>OwnerOrganization</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RegistrationDate</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[RegistrationDate (Sheet11)]</local-name>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias>RegistrationDate</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet11]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>3</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T10001:no:A1:T2147483647:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>39195</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cert Date' datatype='date' name='[CertDate]' role='dimension' type='ordinal' />
+      <column caption='Cert Level' datatype='string' name='[CertLevel]' role='dimension' type='nominal' />
+      <column datatype='string' name='[City (Sheet11)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Country (Sheet11)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Gross Floor Area' datatype='real' name='[GrossFloorArea]' role='dimension' type='ordinal' />
+      <column caption='Is Certified' datatype='string' name='[IsCertified]' role='dimension' type='nominal' />
+      <column caption='LEED System Version Display Name' datatype='string' name='[LEEDSystemVersionDisplayName]' role='dimension' type='nominal' />
+      <column caption='Owner Organization' datatype='string' name='[OwnerOrganization]' role='dimension' type='nominal' />
+      <column caption='Owner Types' datatype='string' name='[OwnerTypes]' role='dimension' type='nominal' />
+      <column caption='Points Achieved' datatype='integer' name='[PointsAchieved]' role='dimension' type='ordinal' />
+      <column caption='Project Name' datatype='string' name='[ProjectName]' role='dimension' type='nominal' />
+      <column caption='Project Types' datatype='string' name='[ProjectTypes]' role='dimension' type='nominal' />
+      <column caption='Registration Date' datatype='string' name='[RegistrationDate]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State (Sheet11)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Prop Area' datatype='integer' name='[TotalPropArea]' role='dimension' type='ordinal' />
+      <column caption='Unit Of Measurement' datatype='string' name='[UnitOfMeasurement]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Zipcode (Sheet11)]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column datatype='string' name='[Zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet11' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_408353A87B69409FBBF633E8919A0E5F]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_AA8E104473E8417EB8F10FB4A423FF26]' role='measure' type='quantitative' />
+      <column caption='Variable' datatype='date' name='[variable]' role='dimension' type='quantitative' />
+      <column-instance column='[CertLevel]' derivation='None' name='[none:CertLevel:nk]' pivot='key' type='nominal' />
+      <column-instance column='[OwnerTypes]' derivation='None' name='[none:OwnerTypes:nk]' pivot='key' type='nominal' />
+      <group caption='Action (State)' hidden='true' name='[Action (State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[State]' />
+        </groupfilter>
+      </group>
+      <group caption='Owner Types Set 2' name='[Owner Types Set 2]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='COUNT([OwnerTypes])' function='order' user:ui-marker='order'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:OwnerTypes:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:OwnerTypes:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:OwnerTypes:nk]' member='&quot;Confidential&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <group caption='Owner Types Set' name='[Owner Types Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='COUNT([OwnerTypes])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[OwnerTypes]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:CertLevel:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gold&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Denied&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Silver&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Certified&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Platinum&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bronze&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:OwnerTypes:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Chemical Industry&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Educational: Early Childhood Educat&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Government Use: Local, Publlic Hous&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Investor: Pension Fund&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Non-Profit (that do not fit into ot&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Private Sector: Other&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;pvt ltd&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;\&quot;Government Use: Federal&#10;\&quot;&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Corporation: Publicly Traded&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Food &amp; Beverage&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Institution&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Local Government, Non-Profit Org.&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Other, Local Government&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Profit Org., State Government&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Telecommunications Facility&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Banking back-office and managemnt operat&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Educational: College, Private&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Government Use: Local, City&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Investor: Equity Fund&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Main Street Organization&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;owner&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Public Sector: College or Universit&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Community Development Corporation or Non&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Educational: University, Private&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Government Use: State&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Investor: REIT, Publicly traded&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Non-Profit Org., Federal Government&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Privately Owned&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Residential&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;College Institution&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Educational: Early Childhood Education/D&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Government Use: Other (utility airp&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Investor: REIT-Non-traded&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Non-Profit (that do not fit into other c&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Private Sector: Private Developer&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Real Estate&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Banking Organization&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Educational: College, Public&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Government Use: Local, County&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Investor: Individual/Family&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;manufacturing&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Private&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Public Sector: Local Government&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Corporately Held: Private&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Federal Government, Profit Org.&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Individual, Profit Org.&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Local Government (municipalities an&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Other, Individual&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Profit Org., Other&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;State Government, State Government&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Agency&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Data center facility with admin and&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Government&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Institutional&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Local Government, Other&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Other, Non-Profit Org.&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Profit sector&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Third Party Management&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Corporate: Publicly Traded&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Federal Government, Local Government&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Individual, Non-Profit Org.&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Leasing&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Non-Profit Org., State Government&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Profit Org., Local Government&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;State Government, Other&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Business Improvement District&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Educational: Community College, Pri&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Government Use: Local, Public Housi&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Investor: Insurance Company&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Manufacturing and office&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Private Developer&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Public Sector: Other&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Corporate, non-traded&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Educational: University, Public&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Honorable Mayor Ras Baraka&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Investor: REIT,Non-traded&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Non-Profit Org., Local Government&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Profit Org.&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Service Provider&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Corporate: Privately Held&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Emaar FM&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Howard Roark&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Investor: ROEC&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Non-Profit Org., Other&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Profit Org., Federal Government&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;State Government&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Corporate:Publicly Traded&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Federal Government, Other&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Individual, Other&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Local Government&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Profit Org., Non-Profit Org.&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;State Government, Profit Org.&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Corporation&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Federal Government, State Government&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Individual, State Government&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Local Government (municipalities and cou&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Other, Individual, Profit Org.&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Profit Org., Profit Org.&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Storage&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Commercial Real Estate Offices&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Educational: K-12 School, Private&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Government Use: Other (utility, air&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Investor: REIT-Publicly traded&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Non-Profit (that does not fit into&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Private Sector: Service Provider&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;REIT&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CafÚ&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Educational: Community College, Pub&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Government Use: Local, Public Housing Au&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Investor: Investment Manager&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Non-Profit&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Private PM Company&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Public-Private Partnership (PPP)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Arts, Entertainment and Recreation&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Distribution &amp; Warehousing&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Government (Public sector)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Investor: Bank&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Local Government, Profit Org.&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Other, Profit Org.&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Provate&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;University&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Corporate: Publicly  Traded&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Federal Government&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Individual&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Investor:REIT,Non-traded&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Non-Profit Org., Profit Org.&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Profit Org., Individual&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;State Government, Local Government&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Community Development Corporation o&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Educational: K-12 School, Public&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Government Use: Other (utility, airport,&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Investor: REIT, Non-traded&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Non-Profit Org.&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Private, Commercial&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Religious&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Asset Management&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ecommerce&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Government Use: Federal&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Investor: Endowment&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Local Government, State Government&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Other, State Government&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Public Private Partnership&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Urban Development Authority&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet11' id='Sheet1_408353A87B69409FBBF633E8919A0E5F'>
+            <properties context=''>
+              <relation connection='excel-direct.0p476lj11n77681ezquml1vigjfd' name='Sheet11' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:T10001:no:A1:T2147483647:1' header='yes' lost='0' outcome='1' processed='39195'>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='Isconfidential' ordinal='1' />
+                  <column datatype='string' name='ProjectName' ordinal='2' />
+                  <column datatype='string' name='Street' ordinal='3' />
+                  <column datatype='string' name='City' ordinal='4' />
+                  <column datatype='string' name='State' ordinal='5' />
+                  <column datatype='string' name='Zipcode' ordinal='6' />
+                  <column datatype='string' name='Country' ordinal='7' />
+                  <column datatype='string' name='LEEDSystemVersionDisplayName' ordinal='8' />
+                  <column datatype='integer' name='PointsAchieved' ordinal='9' />
+                  <column datatype='string' name='CertLevel' ordinal='10' />
+                  <column datatype='string' name='CertDate' ordinal='11' />
+                  <column datatype='string' name='IsCertified' ordinal='12' />
+                  <column datatype='string' name='OwnerTypes' ordinal='13' />
+                  <column datatype='real' name='GrossFloorArea' ordinal='14' />
+                  <column datatype='string' name='UnitOfMeasurement' ordinal='15' />
+                  <column datatype='integer' name='TotalPropArea' ordinal='16' />
+                  <column datatype='string' name='ProjectTypes' ordinal='17' />
+                  <column datatype='string' name='OwnerOrganization' ordinal='18' />
+                  <column datatype='string' name='RegistrationDate' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='Sheet1' id='Sheet1_AA8E104473E8417EB8F10FB4A423FF26'>
+            <properties context=''>
+              <relation connection='excel-direct.04bswat09amrl51cy25vr1pumitz' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:T10001:no:A1:T2147483647:1' header='yes' lost='0' outcome='1' processed='39195'>
+                  <column datatype='integer' name='ID' ordinal='0' />
+                  <column datatype='string' name='Isconfidential' ordinal='1' />
+                  <column datatype='string' name='ProjectName' ordinal='2' />
+                  <column datatype='string' name='Street' ordinal='3' />
+                  <column datatype='string' name='City' ordinal='4' />
+                  <column datatype='string' name='State' ordinal='5' />
+                  <column datatype='string' name='Zipcode' ordinal='6' />
+                  <column datatype='string' name='Country' ordinal='7' />
+                  <column datatype='string' name='LEEDSystemVersionDisplayName' ordinal='8' />
+                  <column datatype='integer' name='PointsAchieved' ordinal='9' />
+                  <column datatype='string' name='CertLevel' ordinal='10' />
+                  <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ss' name='CertDate' ordinal='11' />
+                  <column datatype='string' name='IsCertified' ordinal='12' />
+                  <column datatype='string' name='OwnerTypes' ordinal='13' />
+                  <column datatype='real' name='GrossFloorArea' ordinal='14' />
+                  <column datatype='string' name='UnitOfMeasurement' ordinal='15' />
+                  <column datatype='integer' name='TotalPropArea' ordinal='16' />
+                  <column datatype='string' name='ProjectTypes' ordinal='17' />
+                  <column datatype='string' name='OwnerOrganization' ordinal='18' />
+                  <column datatype='string' name='RegistrationDate' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[State]' />
+              <expression op='[abbr_state]' />
+            </expression>
+            <first-end-point object-id='Sheet1_AA8E104473E8417EB8F10FB4A423FF26' />
+            <second-end-point object-id='Sheet1_408353A87B69409FBBF633E8919A0E5F' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='federated.0mujgvv0xmtyrm14prm2f1p5qgbu'>
+      <column caption='Abbr State' datatype='string' name='[abbr_state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[abbr_state]' derivation='None' name='[none:abbr_state:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.0x5b4lk1nn2t3g14mz9i00gy8v11'>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-relationship source='federated.0x5b4lk1nn2t3g14mz9i00gy8v11' target='federated.0mujgvv0xmtyrm14prm2f1p5qgbu'>
+      <column-mapping>
+        <map key='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:State:nk]' value='[federated.0mujgvv0xmtyrm14prm2f1p5qgbu].[none:abbr_state:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_3589A71FDE684F5CBB2D5C14DC5A7A38]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 1' />
+      <link caption='Filter 1 (generated)' delimiter=',' escape='\' expression='tsl:Dashboard%201?%5Bfederated.0x5b4lk1nn2t3g14mz9i00gy8v11%5D.%5BState%5D~s0=&lt;[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[State]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter1' name='[Action2_7836FC9BD350407B88A8C18CC234C514]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Sheet 1' />
+        <param name='on-empty' value='none' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='Sheet1 (PublicLEEDProjectsDirectory)' name='federated.0x5b4lk1nn2t3g14mz9i00gy8v11' />
+    </datasources>
+    <datasource-dependencies datasource='federated.0x5b4lk1nn2t3g14mz9i00gy8v11'>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Map View of United States</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (PublicLEEDProjectsDirectory)' name='federated.0x5b4lk1nn2t3g14mz9i00gy8v11' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0x5b4lk1nn2t3g14mz9i00gy8v11'>
+            <column caption='Cert Date' datatype='date' name='[CertDate]' role='dimension' type='ordinal' />
+            <column caption='Cert Level' datatype='string' name='[CertLevel]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[CertLevel]' derivation='Count' name='[cnt:CertLevel:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CertDate]' derivation='None' name='[none:CertDate:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Longitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cnt:CertLevel:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>12795</max>
+          </filter>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertDate:ok]'>
+            <groupfilter function='level-members' level='[none:CertDate:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cnt:CertLevel:qk]</column>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertDate:ok]</column>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Latitude (generated)]</column>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Longitude (generated)]' field-type='quantitative' max='33600558.257056221' min='23179164.302874666' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Latitude (generated)]' field-type='quantitative' max='7613534.5357527668' min='332834.47126382776' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:State:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:State:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:State:nk]' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cnt:CertLevel:qk]' />
+              <tooltip column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cnt:CertLevel:qk]' />
+              <text column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:State:nk]' />
+              <geometry column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Latitude (generated)]</rows>
+        <cols>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{0811D535-6E5C-46A1-9DE9-B55C8817D5E1}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[Count of different certification level in <]]></run>
+            <run>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[State]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (PublicLEEDProjectsDirectory)' name='federated.0x5b4lk1nn2t3g14mz9i00gy8v11' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x5b4lk1nn2t3g14mz9i00gy8v11'>
+            <column caption='Cert Level' datatype='string' name='[CertLevel]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[CertLevel]' derivation='Count' name='[cnt:CertLevel:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CertLevel]' derivation='None' name='[none:CertLevel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Action (State)]'>
+            <groupfilter function='member' level='[State]' member='&quot;MT&quot;' user:ui-action-filter='[Action1_3589A71FDE684F5CBB2D5C14DC5A7A38]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertLevel:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CertLevel:nk]' />
+              <groupfilter function='member' level='[none:CertLevel:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;US&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:Country:nk]</column>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Action (State)]</column>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertLevel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cnt:CertLevel:qk]' value='54' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertLevel:nk]' value='142' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertLevel:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:State:nk] * [federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cnt:CertLevel:qk])</rows>
+        <cols>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertLevel:nk]</cols>
+      </table>
+      <simple-id uuid='{A9020928-A1CC-4FFC-8478-0D513031B258}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[Average floor area distribution of <]]></run>
+            <run>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[State]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (PublicLEEDProjectsDirectory)' name='federated.0x5b4lk1nn2t3g14mz9i00gy8v11' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x5b4lk1nn2t3g14mz9i00gy8v11'>
+            <column caption='Cert Level' datatype='string' name='[CertLevel]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Gross Floor Area' datatype='real' name='[GrossFloorArea]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[GrossFloorArea]' derivation='Avg' name='[avg:GrossFloorArea:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CertLevel]' derivation='None' name='[none:CertLevel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Action (State)]'>
+            <groupfilter function='member' level='[State]' member='&quot;MT&quot;' user:ui-action-filter='[Action1_3589A71FDE684F5CBB2D5C14DC5A7A38]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertLevel:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CertLevel:nk]' />
+              <groupfilter function='member' level='[none:CertLevel:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;US&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:Country:nk]</column>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertLevel:nk]</column>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertLevel:nk]' />
+              <wedge-size column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[avg:GrossFloorArea:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.3073480129241943' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:State:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{8BDEAC95-4800-4B32-8A11-B8B07FDE4451}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[Moving average of certification adoption in <]]></run>
+            <run>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[State]</run>
+            <run>&gt;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (PublicLEEDProjectsDirectory)' name='federated.0x5b4lk1nn2t3g14mz9i00gy8v11' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x5b4lk1nn2t3g14mz9i00gy8v11'>
+            <column caption='Cert Date' datatype='date' name='[CertDate]' role='dimension' type='ordinal' />
+            <column caption='Cert Level' datatype='string' name='[CertLevel]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[CertLevel]' derivation='Count' name='[cum:cnt:CertLevel:qk:5]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Avg' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CertDate]' derivation='Year' name='[yr:CertDate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Action (State)]'>
+            <groupfilter function='member' level='[State]' member='&quot;MT&quot;' user:ui-action-filter='[Action1_3589A71FDE684F5CBB2D5C14DC5A7A38]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;US&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[yr:CertDate:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:Country:nk]</column>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Action (State)]</column>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[yr:CertDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='763' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:State:nk] * [federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cum:cnt:CertLevel:qk:5])</rows>
+        <cols>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[yr:CertDate:qk]</cols>
+      </table>
+      <simple-id uuid='{F5AE62C0-CBCC-442E-BFBB-C79CD3E973CC}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[Most popular type of building type in <]]></run>
+            <run>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[State]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (PublicLEEDProjectsDirectory)' name='federated.0x5b4lk1nn2t3g14mz9i00gy8v11' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x5b4lk1nn2t3g14mz9i00gy8v11'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Owner Types' datatype='string' name='[OwnerTypes]' role='dimension' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[OwnerTypes]' derivation='Count' name='[cnt:OwnerTypes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[OwnerTypes]' derivation='None' name='[none:OwnerTypes:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Action (State)]' filter-group='4'>
+            <groupfilter function='member' level='[State]' member='&quot;MT&quot;' user:ui-action-filter='[Action1_3589A71FDE684F5CBB2D5C14DC5A7A38]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;US&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:OwnerTypes:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([OwnerTypes])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:OwnerTypes:nk]' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:OwnerTypes:nk]' member='%null%' />
+                    <groupfilter function='member' level='[none:OwnerTypes:nk]' member='&quot;Confidential&quot;' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:OwnerTypes:nk]' direction='DESC' using='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cnt:OwnerTypes:qk]' />
+          <slices>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:OwnerTypes:nk]</column>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:Country:nk]</column>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:OwnerTypes:nk]' value='142' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:OwnerTypes:nk]' />
+              <text column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cnt:OwnerTypes:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cnt:OwnerTypes:qk]</rows>
+        <cols>([federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:State:nk] / [federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:OwnerTypes:nk])</cols>
+      </table>
+      <simple-id uuid='{39F51652-85C0-41F2-B195-7E0357CB16C3}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run><![CDATA[Average Green House Gas Emission of <]]></run>
+            <run>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[State]</run>
+            <run>&gt; by years</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (PublicLEEDProjectsDirectory)' name='federated.0x5b4lk1nn2t3g14mz9i00gy8v11' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0x5b4lk1nn2t3g14mz9i00gy8v11'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[value]' derivation='Avg' name='[avg:value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variable]' derivation='Year-Trunc' name='[tyr:variable:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Variable' datatype='date' name='[variable]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Action (State)]' filter-group='4'>
+            <groupfilter function='member' level='[State]' member='&quot;MT&quot;' user:ui-action-filter='[Action1_3589A71FDE684F5CBB2D5C14DC5A7A38]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:Country:nk]'>
+            <groupfilter function='member' level='[none:Country:nk]' member='&quot;US&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:Country:nk]</column>
+            <column>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2523757219314575' />
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[avg:value:qk]</rows>
+        <cols>[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[tyr:variable:qk]</cols>
+      </table>
+      <simple-id uuid='{C22DDB8E-F8B1-492E-A0B9-DB4899C4C05E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='54178' id='7' param='horz' type-v2='layout-flow' w='98640' x='680' y='44628'>
+            <zone h='54178' id='5' type-v2='layout-basic' w='92693' x='680' y='44628'>
+              <zone h='54178' id='3' name='Sheet 1' w='33911' x='59462' y='44628'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='54178' id='16' param='horz' type-v2='layout-flow' w='58782' x='680' y='44628'>
+                <zone h='54178' id='22' param='horz' type-v2='layout-flow' w='2719' x='680' y='44628'>
+                  <zone h='54178' id='23' name='Sheet 7' w='2719' x='680' y='44628'>
+                    <layout-cache has-max-size-h='true' maxheight='86' minheight='86' minwidth='159' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='685' h='54178' id='17' is-fixed='true' name='Sheet 5' w='56063' x='3399' y='44628'>
+                  <layout-cache minheight='231' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='70' h='54178' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='5947' x='93373' y='44628'>
+              <zone h='10895' id='8' name='Sheet 1' pane-specification-id='2' param='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cnt:CertLevel:qk]' type-v2='color' w='5947' x='93373' y='44628'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17015' id='11' name='Sheet 2' pane-specification-id='0' param='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertLevel:nk]' type-v2='color' w='5947' x='93373' y='55523'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='43434' id='9' param='horz' type-v2='layout-flow' w='62824' x='36496' y='1194'>
+            <zone fixed-size='366' h='43434' id='12' is-fixed='true' param='vert' type-v2='layout-flow' w='31096' x='36496' y='1194'>
+              <zone fixed-size='325' h='43434' id='13' is-fixed='true' name='Sheet 3' w='31096' x='36496' y='1194'>
+                <layout-cache fixed-size-w='242' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='43434' id='10' name='Sheet 2' w='31728' x='67592' y='1194'>
+              <layout-cache fixed-size-w='704' minheight='195' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='43434' id='14' param='horz' type-v2='layout-flow' w='35816' x='680' y='1194'>
+            <zone h='43434' id='15' name='Sheet 4' w='35816' x='680' y='1194'>
+              <layout-cache has-max-size-h='true' maxheight='51' minheight='51' minwidth='241' type-h='scalable' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1900' minheight='1900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97612' id='28' param='vert' type-v2='layout-flow' w='98640' x='680' y='1194'>
+                <zone fixed-size='280' h='43434' id='15' is-fixed='true' name='Sheet 4' w='35816' x='680' y='1194'>
+                  <layout-cache has-max-size-h='true' maxheight='51' minheight='51' minwidth='241' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43434' id='13' is-fixed='true' name='Sheet 3' w='31096' x='36496' y='1194'>
+                  <layout-cache fixed-size-w='242' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43434' id='10' is-fixed='true' name='Sheet 2' w='31728' x='67592' y='1194'>
+                  <layout-cache fixed-size-w='704' minheight='195' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='17015' id='11' name='Sheet 2' pane-specification-id='0' param='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertLevel:nk]' type-v2='color' w='5947' x='93373' y='55523'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54178' id='23' is-fixed='true' name='Sheet 7' w='2719' x='680' y='44628'>
+                  <layout-cache has-max-size-h='true' maxheight='86' minheight='86' minwidth='159' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54178' id='17' is-fixed='true' name='Sheet 5' w='56063' x='3399' y='44628'>
+                  <layout-cache minheight='231' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54178' id='3' is-fixed='true' name='Sheet 1' w='33911' x='59462' y='44628'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10895' id='8' name='Sheet 1' pane-specification-id='2' param='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cnt:CertLevel:qk]' type-v2='color' w='5947' x='93373' y='44628'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D31ABCAB-FAFF-474B-A426-2CE31BC31FBC}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='132'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='132'>
+            <card pane-specification-id='2' param='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[cnt:CertLevel:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3A28F712-E05A-4D4D-B432-785D35D6608A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4' />
+        <viewpoint name='Sheet 5' />
+        <viewpoint name='Sheet 7'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{8DD291BF-B2D7-4901-8521-F1E78403B2C7}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='132'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='24'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='132'>
+            <card pane-specification-id='0' param='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertLevel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{500C8AEE-0003-43C4-B989-C4A45BE8D3F0}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='132'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='132'>
+            <card pane-specification-id='0' param='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:CertLevel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8D507485-1299-4646-8B3F-8B1A229F1E72}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='132'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='24'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EBFD2231-1E15-4812-81A6-5AB5FE88C860}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='132'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='132'>
+            <card param='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:OwnerTypes:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0x5b4lk1nn2t3g14mz9i00gy8v11].[none:OwnerTypes:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{45239882-EC16-494F-A776-2A46373124EF}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5F48C988-777B-4ADC-B9BA-43E5190AB70A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
